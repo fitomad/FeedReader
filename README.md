@@ -25,3 +25,10 @@ Lo que viene siendo los patrones Singleton y Adapter de toda la vida ;)
 
 Usando Core Data, se crea una copia nada más descargarse el feed a nuestra móvil
 
+## ¿Y por qué...?
+
+**¿...has usado SafariViewController para mostrar la web?**
+
+Por dos motivos:
+1. Tiene soporte para *Vista de lectura* por lo que las noticias del feed se verán muy bien
+2. El usuario no sale en ningún momento de la app.
