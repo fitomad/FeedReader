@@ -20,9 +20,6 @@ internal struct ArticleAdapter
     /// URL a la imagen
     internal private(set) var thumbnailURL: URL
     
-    /// La celda. Para no volver a sacarla de la CollectionView
-    private var cell: ArticleCell?
-    
     /// ID único de artículo
     internal var articleIdentifier: String?
     
@@ -85,11 +82,6 @@ extension ArticleAdapter: FeedCellAdaptable
     
     internal mutating func dequeueCell(from collectionView: UICollectionView, at indexPath: IndexPath) -> UICollectionViewCell
     {
-        if let cell = self.cell
-        {
-            return cell
-        }
-        
         guard let articleCell = collectionView.dequeueReusableCell(withReuseIdentifier: ArticleAdapter.cellIdentifier, for: indexPath) as? ArticleCell else
         {
             fatalError("Unable to dequeue a TaskCell")
@@ -107,8 +99,6 @@ extension ArticleAdapter: FeedCellAdaptable
                 }
             }
         }
-        
-        self.cell = articleCell
         
         return articleCell
     }
