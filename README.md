@@ -1,7 +1,7 @@
 # FeedReader
 Lector de noticias en formato JSON de la publicación [WIRED](https://www.wired.com/about/rss_feeds/) diseñado y desarrollado para iOS con modo de lectura offline.
 
-![Pantallazo](https://github.com/fitomad/FeedReader/blob/master/Screenshots/Captura%20de%20pantalla%202018-08-08%20a%20las%204.01.50.png?raw=true)
+![Pantallazo](https://github.com/fitomad/FeedReader/blob/master/Screenshots/Captura%20de%20pantalla%202018-08-08%20a%20las%204.01.50.png?raw=true) 
 
 ## Diseño de clases
 
