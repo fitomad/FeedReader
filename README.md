@@ -1,5 +1,5 @@
 # FeedReader
-Lector de noticias en formato JSON diseñado y desarrollado para iOS con modo de lectura offline.
+Lector de noticias en formato JSON de la publicación [WIRED](https://www.wired.com/about/rss_feeds/) diseñado y desarrollado para iOS con modo de lectura offline.
 
 ## Diseño de clases
 
