@@ -32,3 +32,8 @@ Usando Core Data, se crea una copia nada más descargarse el feed a nuestra móv
 Por dos motivos:
 1. Tiene soporte para *Vista de lectura* por lo que las noticias del feed se verán muy bien
 2. El usuario no sale en ningún momento de la app.
+
+**¿...cuando está en modo offline no salen las imágenes en la lista de feed pero sí en la del artículo?**
+
+Es a modo de feedback, para que el usuario sepa que no hay conexión
+
