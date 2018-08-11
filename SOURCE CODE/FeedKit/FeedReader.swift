@@ -149,7 +149,9 @@ public class FeedReader
             return 
         }
         
-        let request = URLRequest(url: url)
+        // No queremos saber nada de la cache local ni de
+        // la del proxy u otros intermediarios.
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
 
         let data_task = self.httpSession.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
             if let error = error
