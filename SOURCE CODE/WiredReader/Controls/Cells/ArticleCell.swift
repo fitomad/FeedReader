@@ -53,7 +53,7 @@ internal class ArticleCell: UICollectionViewCell
         {
             if let thumbnail = self.thumbnail
             {
-                self.imageThumbnail.image = thumbnail
+                self.changeImage(with: thumbnail)
             }
         }
     }
@@ -96,5 +96,24 @@ internal class ArticleCell: UICollectionViewCell
         
         self.layer.cornerRadius = 8.0
         self.layer.masksToBounds = true
+    }
+    
+    //
+    // MARK: - Animations
+    //
+    
+    /**
+        Cambiamos de una imagen a otra con una
+        animación para que no sea tan *brusco*
+    */
+    private func changeImage(with newImage: UIImage) -> Void
+    {
+        UIView.transition(with: self.imageThumbnail,
+                          duration: 0.45,
+                          options: [ .transitionCrossDissolve ],
+                          animations: {
+                            self.imageThumbnail.image = newImage
+                          }
+        )
     }
 }
