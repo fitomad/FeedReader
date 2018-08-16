@@ -7,16 +7,16 @@ Lector de noticias en formato JSON de la publicación [WIRED](https://www.wired.
 
 Hay 3 targets
 
-1. WiredReader: Es la app iOs
-2. FeedKit: Lógica ETL para el feed de wired
-3. WiredKit: Framework de soporte a la app, de momento sólo gestiona los datos locales
+1. **WiredReader**: Es la app iOS
+2. **FeedKit**: Lógica ETL para el feed de Wired
+3. **WiredKit**: Framework de soporte a la app, de momento sólo gestiona los datos locales
 
 ##  Patrones de diseño
 
 Vais a encontrar 2:
 
 1. Singleton. Los he empleado como acceso a los clientes de Feed y al controlador de datos local
-2. Adapter. Para poder usar celdas de diferntes tipos como si fueran sólo una. 
+2. Adapter. Para poder usar celdas de diferentes tipos como si fueran sólo una. 
 
 Lo que viene siendo los patrones Singleton y Adapter de toda la vida ;)
 
